@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Organisation Uniinfo telecom pvt. services @Uniinfo.my</title>
+    <meta name="description" content="Uniinfo Telecom Pvt Services ">
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="project.css">
+
+</head>
+<body>
+
+
+    
+<div class="panel " onclick="toggleSidebar()">
+        <i class="fa-solid fa-bars"></i>
+        All
+    </div>
+
+<div class="sidebar" id="sidebar">
+    <ul>
+        <li><a href="#">Home</a></li>
+
+        <li class="dropdown">
+        <a href="#" class="toggle-dropdown">
+            <i class="fa-solid fa-address-card"></i>Employee<i class="fa-solid fa-chevron-up"></i>
+        </a>
+           <ul class="dropdown-menu">
+            <li><a href="#" id="management">Management</a> </li>
+            <li><a href="#" id="request">Request</a></li>
+            <li><a href="#" id="placement">Placement</a></li>
+            <li><a href="#"  id="employment-terms">Employment Terms</a></li>
+            <li><a href="#" id="education">Education</a></li>
+            <li><a href="#" id="expensive">Experience</a></li>
+            <li><a href="#" id="training">Training</a></li>
+            <li><a href="#" id="legal-document">Legal Document</a></li>
+            <li><a href="#" id="custom-role">Custom Role</a></li>
+            <li><a href="#" id="web account">Web Account</a></li>
+            
+            <div id="content">
+                <!-- Content will be dynamically updated here -->
+            </div>
+               
+               </ul>
+           </li>
+           </ul>
+        </li>
+
+<li class="dropdown">
+    <a href="#" class="toggle-dropdown">
+        <i class="fa-solid fa-jet-fighter"></i> Leave
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+    <ul class="dropdown-menu">
+        <li><a href="#" data-section="management">Management</a></li>
+            <li><a href="#" data-section="planner">Planner</a></li>
+            <li><a href="#" data-section="schedule">Schedule</a></li>
+            <li><a href="#" data-section="review">Review</a></li>
+            <li><a href="#" data-section="transaction-report">Transaction Report</a></li>
+            <li><a href="#" data-section="earning-policy">Earning Policy</a></li>
+            <li><a href="#" data-section="approval-workflow">Approval Workflow</a></li>
+            <li><a href="#" data-section="workday">Workday</a></li>
+            <li><a href="#" data-section="holiday">Holiday</a></li>
+            <li><a href="#" data-section="setting">Setting</a></li>
+
+            <div id="mainContent">
+                        <!-- Content will be dynamically updated here -->
+            </div>
+</ul>
+           </li>
+           </ul>
+        </li>
+
+<li class="dropdown">
+    <a href="#" class="toggle-dropdown">
+        <i class="fa-solid fa-fingerprint"></i> Attendance
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+    <ul class="dropdown-menu">
+        <li><a href="#" data-section="management">Management</a></li>
+        <li><a href="#" data-section="daily-attendance-log">Daily Attendance Log</a></li>
+        <li><a href="#" data-section="monthly-attendance">Monthly Attendance </a></li>
+        <li><a href="#" data-section="late-early-entries">Late Early Entries</a></li>
+        <li><a href="#" data-section="overtime-details">Overtime Details</a></li>
+        <li><a href="#" data-section="leave-balance">Leave Balance</a></li>
+
+        <div id="Maincontent">
+            <!-- Content will be dynamically updated here -->
+</div>
+    </ul>
+</li>
+</ul>
+</li>
+
+
+
+
+<li class="dropdown">
+    <a href="#" class="toggle-dropdown">
+        <i class="fa-solid fa-location-dot"></i> GPS Tracker
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+    <ul class="dropdown-menu">
+        <li><a href="#" onclick="displayContent('Location')">Live Location Tracking</a></li>
+
+        <div id="main">
+        </div>
+        
+    </ul>
+</li>
+
+
+
+<li class="dropdown">
+    <a href="#" class="toggle-dropdown">
+        <i class="fa-solid fa-people-group"></i> Team
+        <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+    </a>
+    <ul class="dropdown-menu">
+        <li><a href="#" id="discussion-link">Discussion</a></li>
+        <li><a href="#" id="documents-link">Document & Form Sharing</a></li>
+        <li><a href="#" id="announcements-link">Announcement</a></li>
+
+        
+<div id="team-content">
+    <!-- Dynamic Content Section -->
+</div>
+    </ul>
+</li>
+
+
+
+
+<li class="dropdown">
+    <a href="#" class="toggle-dropdown">
+        <i class="fa-solid fa-building-columns"></i> Payroll
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+    <ul class="dropdown-menu">
+ <li><a href="#" onclick="loadPayrollSection('salary-adjustment')">Salary Adjustment</a></li>
+                    <li><a href="#" onclick="loadPayrollSection('process')">Process</a></li>
+                    <li><a href="#" onclick="loadPayrollSection('annual-statement')">Annual Salary Statement</a></li>
+                    <li><a href="#" onclick="loadPayrollSection('settings')">Settings</a></li>
+        <div id="payroll-content">
+            <!-- Dynamic Content Section -->
+        </div>
+            </ul>
+        </li>
+        
+        
+<li class="dropdown">
+    <a href="#" class="toggle-dropdown">
+        <span><i class="fa-solid fa-circle-info"></i> Support & Settings</span>
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+    <ul class="dropdown-menu">
+        <li><a href="#" data-section="uni-info"><i class="fa-solid fa-gift"></i> Uni-info</a></li>
+        <li><a href="#" data-section="language"><i class="fa-solid fa-globe"></i> English <span style="font-size: 12px; color: gray;">(Change Language)</span></a></li>
+        <li><a href="#" data-section="user-guide"><i class="fa-solid fa-question-circle"></i> User Guide</a></li>
+        <li><a href="#" data-section="video"><i class="fa-solid fa-video"></i> Video</a></li>
+        <li><a href="#" data-section="help"><i class="fa-solid fa-headset"></i> Help</a></li>
+
+        <div id="support-content">
+                        <!-- Dynamic Content Section -->
+
+        </div>
+    </ul>
+    </li>
+
+</div>
+
+
+
+
+<div class="center-container">
+    <img src="https://uni-info.co.in/wp-content/uploads/2017/11/uniinfologo-new-1.png" alt="Uniinfo Telecom">
+    </div>
+    </div>
+
+<div class="uniinfo-container">
+    <span class="uniinfo-text"></span>
+    <a href="#/notification " class="notification-button"> 
+        <i class="fa-solid fa-bell"></i>
+    </a>
+</div>
+    
+    <div class="uniinfo-account">
+        <button class="account-button">
+            <i class="fa-solid fa-user"></i>
+            <span class="account-text"></span>
+        </button>
+    </div>
+    <!-- Account Drawer -->
+    <div class="sidebar" id="sidebar"></div> <!-- For closing drawer by clicking outside -->
+    <div class="account-drawer" id="accountDrawer">
+        <div class="drawer-content">
+            <!-- User Info -->
+            <div class="user-info">
+                <i class="fa-solid fa-user-circle user-icon"></i>
+                <p class="user-email">yashshrivastava185601@gmail.com</p>
+            </div>
+<div class="drawer-item" id="organisationSection">
+    <i class="fa-solid fa-sitemap"></i>
+    <span>My Organisation</span>
+</div>
+
+<!-- Employer Info Panel (Initially Hidden) -->
+<div class="employe-info-panel" id="employerInfoPanel" style="display: none;">
+    <h2>Employer Information</h2>
+
+    <div class="employer-details">
+         <i class="fa-regular fa-building"></i>
+         <br><br>
+         <p><strong>Name:</strong>Uniinfo Telecom Pvt Ltd</p>
+         <br>
+         <p><strong>Email:</strong>info@uni-info.co.in</p>
+         <br>
+         <p><strong>Phone:</strong>+91-07314208091</p>
+         <br>
+         <p><strong>Address:</strong>403, Chetak Centre, 12/2 R.N.T. Marg, Indore - 452001, Madhya Pradesh, India</p>
+         <br>
+    <!-- Google Maps Live Location -->
+    <h3>Location:</h3>
+    <div class="map-container">
+        <iframe
+            width="100%"
+            height="250"
+            style="border: 0; border-radius: 8px;"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.7101517122284!2d75.86886237466008!3d22.693450679455173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fc19578b6d6b%3A0x8c2d08df33b4e8ae!2sUniinfo%20Telecom%20Services%20Limited!5e0!3m2!1sen!2sin!4v1706887981276!5m2!1sen!2sin">
+        </iframe>
+    </div>
+</div>
+
+    <button class="close-button">Close</button>
+ </div>
+
+            <hr>
+            <!-- Preferences -->
+            <div class="drawer-item" onclick="togglePreferences()">
+                <i class="fa-solid fa-cog"></i>
+                <span>Preferences</span>
+            </div>
+        <!-- Preferences Panel -->
+<div class="preferences-panel" id="preferencesPanel">
+    <button class="back-btn" onclick="togglePreferences()">
+        <i class="fa-solid fa-arrow-left"></i>
+    </button>
+    <br>
+    <h2>Preferences</h2>
+
+    <div class="preferences-content">
+        <!-- Employee Management Section -->
+        <div class="section">
+            <h3>Employee Management</h3>
+            <br>
+            <br>
+            <label class="switch">
+                <input type="checkbox" id="toggleEmployee">
+                <span class="slider round"></span>
+            </label>
+            <p>Show employee invitation window after adding a new employee</p>
+        </div>
+
+        <!-- Close Account Section -->
+        <div class="section">
+            <h3>Close Account</h3>
+            <br>
+            <br>
+            <p>If you no longer need this employer account, you may close it. <br><strong>ALL DATA WILL BE DELETED.</strong></p>
+            <br>
+            <br>
+            <button class="close-btn" onclick="confirmCloseAccount()">🚨 Close Account</button>
+        </div>
+    </div>
+</div>
+        
+            <!-- Change Password -->
+            <div class="drawer-item" onclick="togglePasswordContent()">
+                <i class="fa-solid fa-key"></i>
+                <span>Change Password</span>
+            </div>
+            <div class="change-password-content" id="passwordContent">
+                <label for="currentPassword">Current Password:</label>
+                <input type="password" id="currentPassword" placeholder="Enter your current password">
+
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" placeholder="Enter a new password">
+        
+                <label for="confirmPassword">Confirm New Password:</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm your new password">
+        
+                <button onclick="submitPasswordChange()">Submit</button>
+            </div>
+        </div>
+            <hr>
+            <!-- Sign Out -->
+            <button class="signout-button" id="signOutBtn">
+                <i class="fa-solid fa-sign-out-alt"></i>
+                Sign Out
+            </button>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="file-storage-container">
+        <h2>File Storage <span class="question-icon" onclick="toggleInfo()">?</span></h2>
+        <div class="progress-circle">
+            <span>100%</span>
+        </div>
+        <span>100 MB Free</span>
+        <button class="sponsorship-btn" onclick="toggleSponsorship()">Sponsorship</button>
+    </div>
+
+    <!-- File Storage Info Box -->
+    <div class="info-box hidden">
+        <h3>File Storage Information</h3>
+        <p>Every UniInfo account comes with <b>FREE Unlimited Data Storage & 100 MB File Storage</b> by default.</p>
+        <br>
+        <br>
+        <p>Store unlimited attendance records, leave applications, and discussions.</p>
+        <br>
+        <br>
+        <p><b>Usage Breakdown:</b> Check <b>Home » File Storage</b> for space details.</p>
+        <br>
+        <br>
+        <p>Running low? Delete old records or <b>upgrade storage</b>.</p>
+        <br>
+        <button class="close-info" onclick="toggleInfo()">Close</button>
+    </div>
+
+    <!-- Sponsorship Box -->
+    <div class="sponsorship-box hidden">
+        <h2>Support UniInfo - Keep It Free Forever!</h2>
+        <p>Join us in keeping UniInfo free! Your sponsorship helps maintain access to all features.</p>
+
+        <label for="sponsorship-plan">Choose a Sponsorship Plan:</label>
+        <select id="sponsorship-plan" onchange="updateSponsorship()">
+            <option value="50">Basic Support – ₹50 INR Monthly</option>
+            <option value="100">Generous Support – ₹100 INR Monthly</option>
+            <option value="200">Community Booster – ₹200 INR Monthly</option>
+            <option value="300">Sustainer – ₹300 INR Monthly</option>
+            
+        </select>
+
+        <div class="benefits">
+            <p><b>Extra Storage:</b> <span id="extra-storage">1000 MB</span></p>
+            <p><b>Extra HR Role:</b> <span id="extra-role">0</span></p>
+        </div>
+
+        <div class="sponsorship-info hidden">
+            <h3>Sponsorship Benefits:</h3>
+            <p>🎁 Get extra storage & exclusive HR access</p>
+            <p>🔹 Priority support for your account</p>
+            <p>💡 Access to future premium features</p>
+        </div>
+
+        <button class="payment-btn">💳 Secure Payment</button>
+        <button class="close-sponsorship" onclick="toggleSponsorship()">Close</button>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+
+
+
+
+
+
+    <script src="project.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+</body>
+</html>
+
