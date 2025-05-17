@@ -1,0 +1,81 @@
+/* Apply background color for the body */
+body {
+    background-image: url("assets/background.png");
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* General form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Set max-width to ensure form doesn't stretch too wide */
+    background-color: #ffffff; /* White background for form */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center the text */
+  }
+  
+  /* Input styling */
+  input {
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth transition for focus effect */
+  }
+  
+  /* Input focus effect */
+  input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.2); /* Glow effect on focus */
+  }
+  
+  /* Button styling */
+  button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Button transition */
+    width: 100%; /* Full width button */
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Lift effect */
+  }
+  
+  /* Text styling for links */
+  p {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Link styling */
+  a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transition for link color */
+  }
+  
+  /* Link hover effect */
+  a:hover {
+    color: #45a049;
+    text-decoration: underline;
+  }
+  
