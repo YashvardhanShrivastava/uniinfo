@@ -46,11 +46,8 @@ GitHub Pages URL:
 
 ## 📬 Contact
 
-📧 yashshrivastava2207@gmail.com  
-💬 Project started: 16th Sept 2024
+📧 yashshrivastava2207@gmail.com, rairudrani2003@gmail.com
 
----
 
-## ⭐ Support
-If you like the project, please do subscribe! 
-Suggestions and issues are welcome!
+
+
