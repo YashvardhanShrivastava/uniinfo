@@ -33,20 +33,22 @@ UniInfo is a modern and simple Employee Management project designed specifically
 ## 👥 Contributors
 
 - 👨‍💻 Yashvardhan Shrivastava – Full Stack Developer  
-- 🎤 khushi damahe – Support, UI Feedback & Testing  
+- 🎤 Rudrangi Rai– Support, UI Feedback & Testing  
 
 ---
 
 ## 🌐 Live Project
 
 GitHub Pages URL:  
-🔗 https://yashvardhanshrivastava.github.io/uniinfo
+🔗 https://yashvardhanshrivastava.github.io/uniinfo,
+🔗 https://github.com/RudrangiRai 
 
 ---
 
 ## 📬 Contact
 
-📧 yashshrivastava2207@gmail.com,khushidamahe1283@gmail.com 
+📧 yashshrivastava2207@gmail.com,khushidamahe1283@gmail.com ,
+rairudrani2003@gmail.com 
 
 
 
